@@ -1,5 +1,5 @@
 # Portifolio
-Local criado para documentação e exposição do portifólio, com currículo, fontes de contato, experiências, projetos, prêmios entre outas informações importantes
+Local criado para documentação e exposição do portifólio, com currículo, fontes de contato, experiências, projetos, prêmios entre outas informações importantes, a fim de documentar e expor a documentação para o meio profissional.
 
 [Repositório do Github com outras informações](https://github.com/Daniel-5550/Portifolio)
 
