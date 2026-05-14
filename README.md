@@ -1,7 +1,7 @@
 # Portifolio
 Local criado para documentação e exposição do portifólio, com currículo, fontes de contato, experiências, projetos, prêmios entre outas informações importantes
 
-[Github com as informações](https://github.com/Daniel-5550/Portifolio)
+[Repositório do Github com outras informações](https://github.com/Daniel-5550/Portifolio)
 
 [site do portifólio com mais informações](https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing)
 
