@@ -6,11 +6,13 @@
     <title>Portfólio | Daniel de Medeiros Barbosa</title>
     <style>
         :root {
-            --bg-color: #0f172a; /* Preto azulado profundo */
-            --card-bg: #1e293b; /* Azul escuro */
+            /* Gradiente de fundo: do azul mais claro para o escuro */
+            --bg-top: #1e3a8a; /* Azul marinho médio */
+            --bg-bottom: #020617; /* Preto azulado profundo */
+            --card-bg: rgba(30, 41, 59, 0.7); /* Azul escuro semi-transparente */
             --text-main: #f8fafc;
-            --text-dim: #94a3b8;
-            --accent: #3b82f6; /* Azul vibrante */
+            --text-dim: #cbd5e1;
+            --accent: #3b82f6; /* Azul vibrante para o título */
         }
 
         * {
@@ -21,7 +23,9 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
+            /* Aplicando o gradiente linear de cima para baixo */
+            background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+            background-attachment: fixed;
             color: var(--text-main);
             line-height: 1.6;
             display: flex;
@@ -36,6 +40,10 @@
             width: 100%;
             text-align: center;
             animation: fadeIn 0.8s ease-out;
+            background: rgba(15, 23, 42, 0.4); /* Leve fundo escuro para o conteúdo */
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px); /* Efeito de vidro esfumaçado */
         }
 
         @keyframes fadeIn {
@@ -47,14 +55,14 @@
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             letter-spacing: -0.025em;
-            color: var(--accent);
+            color: #60a5fa; /* Azul claro para o título contrastar */
         }
 
         .description {
             color: var(--text-dim);
             margin-bottom: 2.5rem;
             font-size: 1.1rem;
-            text-align: justify;
+            font-weight: 300;
         }
 
         .links-container {
@@ -72,14 +80,13 @@
             border-radius: 12px;
             font-weight: 500;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .link-box:hover {
-            background-color: var(--accent);
+            background-color: #3b82f6;
             transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
             border-color: transparent;
         }
 
@@ -87,6 +94,7 @@
             margin-top: 3rem;
             font-size: 0.85rem;
             color: var(--text-dim);
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -95,22 +103,23 @@
     <div class="container">
         <h1>Portfólio</h1>
         
+        <!-- Texto principal atualizado -->
         <p class="description">
-            Site feito para exposição dos links associados a carreira profissional
+            Site feito para exposição dos links associados a carreira profissional.
         </p>
 
         <div class="links-container">
-            <!-- Caixa 1: GitHub -->
+            <!-- Repositório GitHub -->
             <a href="https://github.com/Daniel-5550/Portifolio" target="_blank" class="link-box">
                 Repositório do GitHub
             </a>
             
-            <!-- Caixa 2: Google Sites -->
+            <!-- Google Sites -->
             <a href="https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing" target="_blank" class="link-box">
                 Site do Portfólio (Mais informações)
             </a>
 
-            <!-- Caixa 3: LinkedIn Corrigida -->
+            <!-- LinkedIn (Corrigido para apenas "LinkedIn") -->
             <a href="https://www.linkedin.com/in/daniel-barbosa-97339240a/" target="_blank" class="link-box" style="background-color: #0077B5; border: none;">
                 LinkedIn
             </a>
