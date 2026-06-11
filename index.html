@@ -1,123 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Daniel de Medeiros Barbosa</title>
-    <style>
-        :root {
-            /* Gradiente de fundo: do azul mais claro para o escuro */
-            --bg-top: #1e3a8a; /* Azul marinho médio */
-            --bg-bottom: #020617; /* Preto azulado profundo */
-            --card-bg: #2563eb; /* Azul royal de alto contraste para os botões */
-            --text-main: #f8fafc;
-            --text-dim: #cbd5e1;
-            --accent: #3b82f6; /* Azul vibrante para o título */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Daniel de Medeiros Barbosa</title>
+<style>
+:root {
+/* Gradiente de fundo: do azul mais claro para o escuro */
+--bg-top: #1e3a8a; /* Azul marinho médio */
+--bg-bottom: #020617; /* Preto azulado profundo */
+--card-bg: #2563eb; /* ALTERADO: Azul sólido de alto contraste para os botões */
+--text-main: #f8fafc;
+--text-dim: #cbd5e1;
+--accent: #3b82f6; /* Azul vibrante para o título */
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            /* Aplicando o gradiente linear de cima para baixo */
-            background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
-            background-attachment: fixed;
-            color: var(--text-main);
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+body {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+/* Aplicando o gradiente linear de cima para baixo */
+background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+background-attachment: fixed;
+color: var(--text-main);
+line-height: 1.6;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+}
 
-        .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            animation: fadeIn 0.8s ease-out;
-            background: rgba(15, 23, 42, 0.4); /* Leve fundo escuro para o conteúdo */
-            padding: 40px 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(5px); /* Efeito de vidro esfumaçado */
-        }
+.container {
+max-width: 600px;
+width: 100%;
+text-align: center;
+animation: fadeIn 0.8s ease-out;
+background: rgba(15, 23, 42, 0.4); /* Leve fundo escuro para o conteúdo */
+padding: 40px 30px;
+border-radius: 20px;
+backdrop-filter: blur(5px); /* Efeito de vidro esfumaçado */
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.025em;
-            color: #60a5fa; /* Azul claro para o título contrastar */
-        }
+h1 {
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
+letter-spacing: -0.025em;
+color: #60a5fa; /* Azul claro para o título contrastar */
+}
 
-        .description {
-            color: var(--text-dim);
-            margin-bottom: 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
+.description {
+color: var(--text-dim);
+margin-bottom: 2.5rem;
+font-size: 1.1rem;
+font-weight: 300;
+}
 
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+.links-container {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
 
-        .link-box {
-            display: block;
-            background-color: var(--card-bg);
-            color: var(--text-main);
-            text-decoration: none;
-            padding: 18px;
-            border-radius: 12px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+.link-box {
+display: block;
+background-color: var(--card-bg);
+color: var(--text-main);
+text-decoration: none;
+padding: 18px;
+border-radius: 12px;
+font-weight: 500;
+transition: all 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-        .link-box:hover {
-            background-color: #1d4ed8; /* Azul um pouco mais escuro no hover */
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            border-color: transparent;
-        }
+.link-box:hover {
+background-color: #1d4ed8; /* ALTERADO: Tom levemente mais escuro para o efeito de passar o mouse */
+transform: translateY(-3px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+border-color: transparent;
+}
 
-        footer {
-            margin-top: 3rem;
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            opacity: 0.6;
-        }
-    </style>
+footer {
+margin-top: 3rem;
+font-size: 0.85rem;
+color: var(--text-dim);
+opacity: 0.6;
+}
+</style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Portfólio</h1>
-        
-        <p class="description">
-            Site feito para exposição dos links associados a carreira profissional.
-        </p>
+<div class="container">
+<h1>Portfólio</h1>
+<p class="description">
+Site feito para exposição dos links associados a carreira profissional.
+</p>
 
-        <div class="links-container">
-            <a href="https://github.com/Daniel-5550/Portifolio/tree/main/Relatorio_Tecnico_de_Implantacao" target="_blank" class="link-box">
-                Relatório Técnico de Implantação
-            </a>
+<div class="links-container">
+<a href="https://github.com/Daniel-5550/Portifolio/tree/main/Relatorio_Tecnico_de_Implantacao" target="_blank" class="link-box">
+Relatório Técnico de Implantação
+</a>
 
-            <a href="https://github.com/Daniel-5550/Portifolio" target="_blank" class="link-box">
-                Repositório do GitHub
-            </a>
-            
-            <a href="https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing" target="_blank" class="link-box">
-                Site do Portfólio (Mais informações)
-            </a>
+<a href="https://github.com/Daniel-5550/Portifolio" target="_blank" class="link-box">
+Repositório do GitHub
+</a>
+<a href="https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing" target="_blank" class="link-box">
+Site do Portfólio (Mais informações)
+</a>
 
-            <a href="
+<a href="https://www.linkedin.com/in/daniel-barbosa-97339240a/" target="_blank" class="link-box" style="background-color: #0077B5; border: none;">
+LinkedIn
+</a>
+</div>
+
+<footer>
+&copy; 2026 Daniel de Medeiros Barbosa
+</footer>
+</div>
+
+</body>
+</html>
