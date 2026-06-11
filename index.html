@@ -90,6 +90,20 @@
             border-color: transparent;
         }
 
+        /* Estilo específico para o botão com ícone personalizado */
+        .link-box-custom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .custom-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
         footer {
             margin-top: 3rem;
             font-size: 0.85rem;
@@ -103,23 +117,24 @@
     <div class="container">
         <h1>Portfólio</h1>
         
-        <!-- Texto principal atualizado -->
         <p class="description">
             Site feito para exposição dos links associados a carreira profissional.
         </p>
 
         <div class="links-container">
-            <!-- Repositório GitHub -->
+            <a href="https://github.com/Daniel-5550/Portifolio/tree/main/Relatorio_Tecnico_de_Implantacao" target="_blank" class="link-box link-box-custom">
+                <img src="image_dc9800.png" alt="Ícone Pasta GitHub" class="custom-icon">
+                Relatório Técnico de Implantação
+            </a>
+
             <a href="https://github.com/Daniel-5550/Portifolio" target="_blank" class="link-box">
                 Repositório do GitHub
             </a>
             
-            <!-- Google Sites -->
             <a href="https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing" target="_blank" class="link-box">
                 Site do Portfólio (Mais informações)
             </a>
 
-            <!-- LinkedIn (Corrigido para apenas "LinkedIn") -->
             <a href="https://www.linkedin.com/in/daniel-barbosa-97339240a/" target="_blank" class="link-box" style="background-color: #0077B5; border: none;">
                 LinkedIn
             </a>
