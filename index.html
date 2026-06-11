@@ -80,58 +80,13 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Transição suave de cores do primeiro botão até o LinkedIn */
-        .btn-1 { background-color: rgba(30, 41, 59, 0.7); }
-        .btn-2 { background-color: rgba(20, 52, 98, 0.75); }
-        .btn-3 { background-color: rgba(10, 64, 137, 0.85); }
-        .btn-4 { background-color: #0077B5; border: none; }
+        /* Gradiente de opacidade: do translúcido ao totalmente opaco */
+        .btn-1 { background-color: rgba(59, 130, 246, 0.25); } /* Mais translúcido */
+        .btn-2 { background-color: rgba(29, 114, 214, 0.50); } /* Médio translúcido */
+        .btn-3 { background-color: rgba(14, 101, 189, 0.75); } /* Quase opaco */
+        .btn-4 { background-color: #0077B5; border: none; }    /* Totalmente opaco (LinkedIn) */
 
         .link-box:hover {
             background-color: #3b82f6;
             transform: translateY(-3px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            border-color: transparent;
-        }
-
-        footer {
-            margin-top: 3rem;
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            opacity: 0.6;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Portfólio</h1>
-        
-        <p class="description">
-            Site feito para exposição dos links associados a carreira profissional.
-        </p>
-
-        <div class="links-container">
-            <a href="https://github.com/Daniel-5550/Portifolio/tree/main/Relatorio_Tecnico_de_Implantacao" target="_blank" class="link-box btn-1">
-                Relatório Técnico de Implantação
-            </a>
-
-            <a href="https://github.com/Daniel-5550/Portifolio" target="_blank" class="link-box btn-2">
-                Repositório do GitHub
-            </a>
-            
-            <a href="https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing" target="_blank" class="link-box btn-3">
-                Site do Portfólio (Mais informações)
-            </a>
-
-            <a href="https://www.linkedin.com/in/daniel-barbosa-97339240a/" target="_blank" class="link-box btn-4">
-                LinkedIn
-            </a>
-        </div>
-
-        <footer>
-            &copy; 2026 Daniel de Medeiros Barbosa
-        </footer>
-    </div>
-
-</body>
-</html>
