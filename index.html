@@ -42,6 +42,7 @@
             padding: 40px 30px;
             border-radius: 20px;
             backdrop-filter: blur(5px); /* Efeito de vidro esfumaçado */
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         @keyframes fadeIn {
@@ -80,13 +81,35 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Gradiente de opacidade: do translúcido ao totalmente opaco */
-        .btn-1 { background-color: rgba(59, 130, 246, 0.25); } /* Mais translúcido */
-        .btn-2 { background-color: rgba(29, 114, 214, 0.50); } /* Médio translúcido */
-        .btn-3 { background-color: rgba(14, 101, 189, 0.75); } /* Quase opaco */
-        .btn-4 { background-color: #0077B5; border: none; }    /* Totalmente opaco (LinkedIn) */
+        /* Gradiente de opacidade nos botões */
+        .btn-1 { background-color: rgba(59, 130, 246, 0.25); } 
+        .btn-2 { background-color: rgba(29, 114, 214, 0.50); } 
+        .btn-3 { background-color: rgba(14, 101, 189, 0.75); } 
+        .btn-4 { background-color: #0077B5; border: none; }    
 
         .link-box:hover {
             background-color: #3b82f6;
             transform: translateY(-3px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            border-color: transparent;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Portfólio</h1>
+        
+        <p class="description">
+            Site feito para exposição dos links associados a carreira profissional.
+        </p>
+
+        <div class="links-container">
+            <a href="
