@@ -9,10 +9,8 @@
             /* Gradiente de fundo: do azul mais claro para o escuro */
             --bg-top: #1e3a8a; /* Azul marinho médio */
             --bg-bottom: #020617; /* Preto azulado profundo */
-            --card-bg: rgba(30, 41, 59, 0.7); /* Azul escuro semi-transparente */
             --text-main: #f8fafc;
             --text-dim: #cbd5e1;
-            --accent: #3b82f6; /* Azul vibrante para o título */
         }
 
         * {
@@ -48,4 +46,92 @@
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1;
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.025em;
+            color: #60a5fa; /* Azul claro para o título contrastar */
+        }
+
+        .description {
+            color: var(--text-dim);
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-box {
+            display: block;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Transição suave de cores do primeiro botão até o LinkedIn */
+        .btn-1 { background-color: rgba(30, 41, 59, 0.7); }
+        .btn-2 { background-color: rgba(20, 52, 98, 0.75); }
+        .btn-3 { background-color: rgba(10, 64, 137, 0.85); }
+        .btn-4 { background-color: #0077B5; border: none; }
+
+        .link-box:hover {
+            background-color: #3b82f6;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            border-color: transparent;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Portfólio</h1>
+        
+        <p class="description">
+            Site feito para exposição dos links associados a carreira profissional.
+        </p>
+
+        <div class="links-container">
+            <a href="https://github.com/Daniel-5550/Portifolio/tree/main/Relatorio_Tecnico_de_Implantacao" target="_blank" class="link-box btn-1">
+                Relatório Técnico de Implantação
+            </a>
+
+            <a href="https://github.com/Daniel-5550/Portifolio" target="_blank" class="link-box btn-2">
+                Repositório do GitHub
+            </a>
+            
+            <a href="https://sites.google.com/view/daniel-de-medeiros-barbosa?usp=sharing" target="_blank" class="link-box btn-3">
+                Site do Portfólio (Mais informações)
+            </a>
+
+            <a href="https://www.linkedin.com/in/daniel-barbosa-97339240a/" target="_blank" class="link-box btn-4">
+                LinkedIn
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Daniel de Medeiros Barbosa
+        </footer>
+    </div>
+
+</body>
+</html>
